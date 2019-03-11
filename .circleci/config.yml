@@ -11,13 +11,14 @@ jobs:
     
     docker:
       # specify the version you desire here
-      - image: circleci/openjdk:8-jdk-browsers
+      #- image: circleci/openjdk:8-jdk-browsers
+      - image: circleci/openjdk:8-jdk
     
     steps:
     
       - checkout
       
-      - run: ant -lib lib/ -buildfile project/build.xml
+      - run: ant -lib lib/ -buildfile -f project/build.xml
 
      # - run: sudo su -c 'echo "deb http://deb.debian.org/debian jessie-backports main" >> /etc/apt/sources.list'
      # - run: sudo rm -rf /var/lib/apt/lists/*
