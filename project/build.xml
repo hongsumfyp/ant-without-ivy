@@ -21,10 +21,7 @@
         <javac srcdir="${src.dir}" destdir="${build.dir}" classpathref="lib.path.id" includeAntRuntime="false"/>
     </target>
 	
-	
-   <target name="dependencytree" description="--> retrieve dependency tree">
-  	<dependencytree />
-    </target>
+
 
     <!-- =================================
           target: run
