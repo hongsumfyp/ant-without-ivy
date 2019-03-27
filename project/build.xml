@@ -22,7 +22,7 @@
     </target>
 	
    <target name="dependencytree"  description="--> retrieve dependency tree">
-  	<dependencytree />
+  	<ivy:dependencytree />
     </target>
 
     <!-- =================================
