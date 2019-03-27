@@ -18,7 +18,7 @@ jobs:
     
       - checkout
       
-      - run: ant -lib lib/ run 
+      - run: ant -lib lib/ -buildfile project/build.xml run
      # - run: sudo su -c 'echo "deb http://deb.debian.org/debian jessie-backports main" >> /etc/apt/sources.list'
      # - run: sudo rm -rf /var/lib/apt/lists/*
      # - run: sudo apt-get update
